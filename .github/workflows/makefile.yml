@@ -19,8 +19,9 @@ jobs:
                 image: debian:testing
                 options: -v ${{ github.workspace }}:/root -v /output:/output
                 run: |
+                    cd /root
                     apt update
-                    apt install devscripts equivs -y
+                    apt install devscripts equivs build-essential -y
                     mk-build-deps --install
                     debuild -us -uc -b
                     mkdir -p /output/
