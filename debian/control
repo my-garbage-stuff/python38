@@ -1,0 +1,12 @@
+Source: python38
+Section: utils
+Priority: optional
+Maintainer: Your Name <your.name@email.org>
+Standards-Version: 4.3.0
+Homepage: https://example.org
+
+Package: python38
+Architecture: any
+Depends: libc6
+Description: python38
+ Python 3.8 package
