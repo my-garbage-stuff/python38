@@ -8,7 +8,7 @@ on:
 
 jobs:
     compile:
-        name: Teaiso
+        name: Create deb package
         runs-on: ubuntu-latest
         steps:
           - name: Check out the repo
