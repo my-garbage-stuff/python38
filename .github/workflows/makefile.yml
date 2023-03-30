@@ -21,9 +21,9 @@ jobs:
                 run: |
                     cd /root
                     apt update
-                    apt install devscripts equivs build-essential -y
+                    apt install devscripts equivs build-essential wget -y
                     mk-build-deps --install
-                    debuild -us -uc -b
+                    yes | debuild -us -uc -b
                     mkdir -p /output/
                     mv ../*.deb /output/
 
